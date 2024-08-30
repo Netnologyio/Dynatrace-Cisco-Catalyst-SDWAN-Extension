@@ -16,6 +16,8 @@ For the extension to function properly, you must create a user account that the 
 
 Installing this extension is a two-part process. The first is the root certificate for this extension, which is generally a one-time only part. The second part must be done for every version of the extension you install.
 
+First, download the required files. You can click [this link](https://github.com/adeelahmed373/Dynatrace_SD-WAN_Extension/archive/refs/heads/main.zip) to download the zip file. Alternatively, above and to the right of the files, you should see a green "Code" button with a drop down indicator. Click this button, and then click "Download ZIP" from the menu that appears. This will provide you with a `.zip` file containing all the files you see within it.
+
 ### Extension Root Certificate
 
 Because this extension uses the Python-based Extensions 2.0 Framework, you are required to upload a certificate that is unique to this extension (but not to each version of this extension). This is provided as `custom_nn-sdwan_root.pem`. You must upload this both to Dynatrace as well as any hosts that will execute the extension.
@@ -31,7 +33,7 @@ To upload it to Dynatrace, follow these steps:
 - Configure who has access to this credential as you see fit.
 - Click **Save**.
 
-Next, the file needs to be uploaded to each and every ActiveGate host that may execute the extension. Refer to [this documentation](https://docs.dynatrace.com/docs/extend-dynatrace/extensions20/sign-extension#upload) for the upload location. Follow the instructions for "Remote extensions", as this extension is designed for ActivateGate execution ("remote" execution) only. For tracking purposes, we suggest that you do not change the name of the file.
+Next, the file needs to be uploaded to each and every ActiveGate host that may execute the extension. Refer to [this documentation](https://docs.dynatrace.com/docs/extend-dynatrace/extensions20/sign-extension#upload) for the upload location. Follow the instructions for "Remote extensions", as this extension is designed for ActiveGate execution ("remote" execution) only. For tracking purposes, we suggest that you do not change the name of the file.
 
 ### Extension Executable Files
 
