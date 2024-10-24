@@ -54,7 +54,7 @@ Once you set up and deploy a monitoring configuration (next step), the extension
 
 Setting up a new monitoring configuration is straightforward. Navigate to this extension in the Dynatrace Hub and choose **Add monitoring configuration**.
 
-On the first page, you will designate the ActiveGate group on which the extension will run. On the second page, you may onboard one or more SD-WAN Managers. To fully configure each, simply enter the protocol, hostname, username, and password as described earlier. When complete, advance to the third and final page where you may provide a description of the configuration you made.
+On the first page, you will designate the ActiveGate group on which the extension will run. On the second page, you may onboard an SD-WAN Managers. If you are using version 1.0.5 of the extension or later, you may onboard multiple managers, identifying each one by a unique value for the "Manager Name" field. To fully configure each, simply enter the protocol, hostname, username, and password as described earlier. When complete, advance to the third and final page where you may provide a description of the configuration you made.
 
 A dashboard has been provided to view the collected data. To view it, upload it to your environment. Go to **Dashboards**, click on **Import dashboard**, and choose `Cisco Catalyst SD-WAN Overview.json`. If/when metrics are being collected, the tiles will automatically begin populating.
 
